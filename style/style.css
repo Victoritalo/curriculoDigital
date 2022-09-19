@@ -9,6 +9,118 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--fontcolorFour);
     font-size: 18px;
 }
+main {
+    display: flex;
+}
+.sidebar img {
+    margin: .5rem;
+    height: 150px;
+    width: 150px;
+    border-radius: 24px 60px;
+    border: solid 4px var(--fontcolorThree);
+}
+.sidebar {
+    /* margin: 0; */
+    /* padding: 0; */
+    width: 300px;
+    background-color: var(--fontcolorOne);
+    position: fixed; /*fixed maybe*/
+    height: 100%; /*100vh*/
+    overflow: auto;
+}
 
+.sidebar a {
+    display: block;
+    color: var(--fontcolorFour);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: var(--fontcolorThree);
+    color: var(--fontcolorFour);
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: var(--fontcolorTwo);
+    color: var(--fontcolorFour);
+}
+
+section.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 400px;
+    padding: 1px 16px;
+    height: 100vh;/*checkout responsive in next review*/
+    text-align: center;
+}
+
+section.content h1 {
+    color: var(--fontcolorOne);
+    font-size: 98px;
+    font-weight: bold;
+    margin: 1rem;
+}
+.span-h1 {
+    color: #cc0a4d;
+}
+
+section.content h2 {
+    font-size: 22px;
+    color: var(--fontcolorTwo);
+    font-weight: bold;
+}
+section.content p {
+    color: var(--fontcolorTwo);
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+    main {
+        display: block;
+    }
+    .sidebar img {
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar ul, li {
+        display: flex;
+        justify-content: space-around;
+        /* overflow: hidden; */
+    }
+    section.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    body {
+        font-size: 17px;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        
+    }
+    .sidebar ul, li {
+        display: block;
+        justify-content: space-around;
+        text-align: center;
+    }
+    section.content {
+        margin-left: 0;
+    }
+}
