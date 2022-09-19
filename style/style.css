@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@200;600&display=swap');
+
+:root {
+    --fontcolorOne: #0b0a33;
+    --fontcolorTwo: #7a7d9c;
+    --fontcolorThree: #cc0a4d;
+    --fontcolorFour: #FFFFFF;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+}
+
