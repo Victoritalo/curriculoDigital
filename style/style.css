@@ -62,15 +62,16 @@ section.content {
 
 section.content h1 {
     color: var(--fontcolorOne);
-    font-size: 58px;
-    font-weight: bold; 
+    font-size: 98px;
+    font-weight: bold;
+    margin: 1rem;
 }
 .span-h1 {
     color: #cc0a4d;
 }
 
 section.content h2 {
-    font-size: 20px;
+    font-size: 22px;
     color: var(--fontcolorTwo);
     font-weight: bold;
 }
